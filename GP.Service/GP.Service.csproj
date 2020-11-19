@@ -56,6 +56,8 @@
     <Compile Include="ManageProvider.cs" />
     <Compile Include="ProductExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TP2\IProductService.cs" />
+    <Compile Include="TP2\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GP.Data\GP.Data.csproj">
@@ -66,11 +68,16 @@
       <Project>{60c99afa-c769-4f32-a19a-a7ba1dbebf96}</Project>
       <Name>GP.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ServicesPattern\ServicesPattern.csproj">
+      <Project>{4e0fbf6c-3efb-4262-8213-d60562672142}</Project>
+      <Name>ServicesPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

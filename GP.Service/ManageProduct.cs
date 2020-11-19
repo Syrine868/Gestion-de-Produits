@@ -126,7 +126,7 @@ namespace GP.Service
         public int GetCountProduct(string city)
         {
             var query = from p in products
-                        where ((Chemical)p).City.Equals(city) && p is Chemical
+                        where ((Chemical)p).Adresse.City.Equals(city) && p is Chemical
                         select p;
             return query.Count();
                         
@@ -136,7 +136,7 @@ namespace GP.Service
         {
             var query = from p in products
                         where p is Chemical
-                        orderby ((Chemical )p).City descending
+                        orderby ((Chemical )p).Adresse.City descending
                         select ((Chemical) p)
                         ;
             return query;
@@ -146,9 +146,9 @@ namespace GP.Service
         {
             var query = from p in products
                         where p is Chemical
-                        orderby ((Chemical)p).City descending
+                        orderby ((Chemical)p).Adresse.City descending
                         group (Chemical)p by
-                        ((Chemical)p).City;
+                        ((Chemical)p).Adresse.City;
             foreach (var i in query)
             {
 

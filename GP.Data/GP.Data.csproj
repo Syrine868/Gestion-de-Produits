@@ -59,6 +59,13 @@
     <Compile Include="Conventions\DateTimeConvention.cs" />
     <Compile Include="Conventions\IdConvention.cs" />
     <Compile Include="GPContext.cs" />
+    <Compile Include="Infrastructures\DatabaseFactory.cs" />
+    <Compile Include="Infrastructures\Disposable.cs" />
+    <Compile Include="Infrastructures\IDatabaseFactory.cs" />
+    <Compile Include="Infrastructures\IRepositoryBase.cs" />
+    <Compile Include="Infrastructures\IunitOfWork.cs" />
+    <Compile Include="Infrastructures\RepositoryBase.cs" />
+    <Compile Include="Infrastructures\UnitOfWork.cs" />
     <Compile Include="Migrations\202011121302271_mig1.cs" />
     <Compile Include="Migrations\202011121302271_mig1.designer.cs">
       <DependentUpon>202011121302271_mig1.cs</DependentUpon>
