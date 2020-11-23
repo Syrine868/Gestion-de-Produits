@@ -56,6 +56,8 @@
     <Compile Include="ManageProvider.cs" />
     <Compile Include="ProductExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TP2\FactureService.cs" />
+    <Compile Include="TP2\IFactureService.cs" />
     <Compile Include="TP2\IProductService.cs" />
     <Compile Include="TP2\ProductService.cs" />
   </ItemGroup>
