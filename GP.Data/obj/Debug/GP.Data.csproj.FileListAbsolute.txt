@@ -33,9 +33,9 @@ C:\Users\PC\source\repos\Gestion de Produits\GP.Data\bin\Debug\GP.Domain.dll.con
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\bin\Debug\EntityFramework.xml
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.Migrations.mig1.resources
+C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.csproj.GenerateResource.cache
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.csproj.CoreCompileInputs.cache
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.csproj.CopyComplete
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.dll
 C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.pdb
-C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.Migrations.mig1.resources
-C:\Users\PC\source\repos\Gestion de Produits\GP.Data\obj\Debug\GP.Data.csproj.GenerateResource.cache

@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\ServicesPattern.dll
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\ServicesPattern.pdb
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Data.dll
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\EntityFramework.dll
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Domain.dll
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Data.pdb
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Data.dll.config
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\EntityFramework.xml
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Domain.pdb
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\bin\Debug\GP.Domain.dll.config
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\obj\Debug\ServicesPattern.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\obj\Debug\ServicesPattern.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\obj\Debug\ServicesPattern.csproj.CopyComplete
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\obj\Debug\ServicesPattern.dll
+C:\Users\PC\source\repos\Gestion de Produits\ServicesPattern\obj\Debug\ServicesPattern.pdb

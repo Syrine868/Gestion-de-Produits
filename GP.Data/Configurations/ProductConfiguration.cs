@@ -29,7 +29,7 @@ namespace GP.Data.Configurations
                 .WillCascadeOnDelete(false);
 
             //Stratégie Hertitage
-            //Map<Biological>(b => b.Requires("isBiological").HasValue(1));
+           // Map<Biological>(b => b.Requires("isBiological").HasValue(1));
            // Map<Chemical>(ch => ch.Requires("isBiological").HasValue(0));
 
 

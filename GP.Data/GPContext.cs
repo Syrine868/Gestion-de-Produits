@@ -14,6 +14,7 @@ namespace GP.Data
     {
         public GPContext() : base("name =GPConnection")
         {
+            Database.SetInitializer<GPContext>(null);//Disable initializer
 
         }
         public DbSet<Product> Products { get; set; }
@@ -39,7 +40,7 @@ namespace GP.Data
             //   modelBuilder.Entity<Chemical>().ToTable("Chemicals");
 
             //TPC : Stratégie Heritage
-            /*   modelBuilder.Entity<Biological>().Map(b =>
+             /* modelBuilder.Entity<Biological>().Map(b =>
                 {
                     b.ToTable("Biologicals");
                     b.MapInheritedProperties();
@@ -50,12 +51,12 @@ namespace GP.Data
                 {
                     ch.ToTable("Chemicals");
                     ch.MapInheritedProperties();
-                });
-           */
+                });*/
+           
 
             //TPH ( default )
-            modelBuilder.Entity <Chemical> ().Map(m => m.Requires("IsBiological").HasValue("0"));
-            modelBuilder.Entity<Biological>().Map(m => m.Requires("IsBiological").HasValue("1"));
+           // modelBuilder.Entity <Chemical> ().Map(m => m.Requires("IsBiological").HasValue("0"));
+           // modelBuilder.Entity<Biological>().Map(m => m.Requires("IsBiological").HasValue("1"));
 
        
             // ADD CONVENTION

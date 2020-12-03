@@ -10,8 +10,10 @@ namespace ServicesPattern
 {
   public  class Service<TEntity> : IService<TEntity> where TEntity : class
     {
-        static IDatabaseFactory factory = new DatabaseFactory();
-        static IunitOfWork utwk = new UnitOfWork(factory);
+      public  static IDatabaseFactory factory = new DatabaseFactory();
+     public   static IunitOfWork utwk = new UnitOfWork(factory);
+
+
         public virtual void Add(TEntity entity)
         {
             utwk.getRepository<TEntity>().Add(entity);
@@ -54,7 +56,7 @@ namespace ServicesPattern
             {
                 utwk.Commit();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

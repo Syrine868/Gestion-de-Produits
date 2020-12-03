@@ -1,4 +1,5 @@
-﻿using GP.Domain;
+﻿using GP.Data.Infrastructures;
+using GP.Domain;
 using ServicesPattern;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace GP.Service.TP2
 {
     public class ProductService : Service<Product>, IProductService
     {
+     public   static new IDatabaseFactory factory = new DatabaseFactory();
+      public  static new IunitOfWork utwk = new UnitOfWork(factory);
+
+        public ProductService(): base()
+        {
+
+        }
 
         ManageProduct m = new ManageProduct();
         public IEnumerable<Product> FindMost5ExpensiveProds()
@@ -57,5 +65,14 @@ namespace GP.Service.TP2
                 Delete(p);
             }
         }
+
+        float IProductService.UnavailableProductsPercentage()
+        {
+            int q_t = GetMany().Count();
+            int q_p = GetMany(p => p.Quantity == 0).Count();
+            return q_p / q_t * 100;
+        }
+
+
     }
 }
