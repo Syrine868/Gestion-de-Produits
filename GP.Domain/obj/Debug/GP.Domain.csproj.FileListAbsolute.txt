@@ -21,3 +21,4 @@ C:\Users\PC\source\repos\Gestion de Produits\GP.Domain\obj\Debug\GP.Domain.cspro
 C:\Users\PC\source\repos\Gestion de Produits\GP.Domain\obj\Debug\GP.Domain.csproj.CopyComplete
 C:\Users\PC\source\repos\Gestion de Produits\GP.Domain\obj\Debug\GP.Domain.dll
 C:\Users\PC\source\repos\Gestion de Produits\GP.Domain\obj\Debug\GP.Domain.pdb
+C:\Users\PC\source\repos\Gestion de Produits\GP.Domain\obj\Debug\GP.Domain.csprojAssemblyReference.cache

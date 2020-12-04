@@ -16,7 +16,7 @@ namespace GP.Domain
         public string Image { get; set; }
 
         [DisplayName("Production Date")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime DateProd  {get ; set;}
 
         [DataType(DataType.MultilineText)]

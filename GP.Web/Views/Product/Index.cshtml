@@ -5,7 +5,17 @@
 }
 
 <h2>Index</h2>
-
+@using (Html.BeginForm())
+{<table>
+        <tr>
+            <td>
+                <div>
+                    Recherche par nom de produit: @Html.TextBox("critère")
+                </div>
+            </td>
+            <td> <input type="submit" value="Search" id="submit" /> </td>
+        </tr>
+  </table>}
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -35,35 +45,38 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Image)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateProd)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Quantity)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.idProduct }) |
-            @Html.ActionLink("Details", "Details", new { id=item.idProduct }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.idProduct })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @{string path = "~/Content/Upload/" + @item.Image;}
+
+                <img src="@Url.Content(path)" width="50" height="50" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateProd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryId)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idProduct }) |
+                @Html.ActionLink("Details", "Details", new { id = item.idProduct }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.idProduct })
+            </td>
+        </tr>
+    }
 
 </table>
